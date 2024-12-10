@@ -1,3 +1,4 @@
+<%@include  file="securitygaurd.jsp" %>
 <html>
     <style>
         .tabletheme{
@@ -37,11 +38,11 @@
         }
     </style>
     <body>
-        <%@include file="accounttop.jsp" %>
+        <%@include file="Customertop.jsp" %>
 
         <div  class="divtheme">
          
-            
+             welcome <%=session.getAttribute("CALL") %>
                 
             </div>
         

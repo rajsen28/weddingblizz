@@ -4,8 +4,8 @@
 <%@page import="java.sql.ResultSet"%>
 
 <%
-    String location= request.getParameter("cLocat");
-    String cityPincode= request.getParameter("cPin");
+    String firstName= request.getParameter("cLocat");
+    String lastName= request.getParameter("cPin");
 
     
 
@@ -13,10 +13,10 @@
             
             Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","rajsen@#0011");
             
-            PreparedStatement st= connection.prepareStatement("insert into city18 values(?,?)");
+            PreparedStatement st= connection.prepareStatement("insert into customers values(?,?)");
             
-               st.setString(1,location);
-               st.setString(2,cityPincode);
+               st.setString(1,firstName);
+               st.setString(2,lastName);
                
                st.executeUpdate();
                connection.close();

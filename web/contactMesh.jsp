@@ -67,7 +67,7 @@
    Class.forName("com.mysql.jdbc.Driver");
    Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","rajsen@#0011");
    
-    PreparedStatement st= connection.prepareStatement("select * from gardens18");
+    PreparedStatement st= connection.prepareStatement("select * from decore18");
             
               ResultSet rs= st.executeQuery();
               ArrayList list1= new ArrayList();
@@ -81,7 +81,7 @@
               list1.add(rs.getString(1));
               list2.add(rs.getString(2));
               list3.add(rs.getString(3));
-              list4.add(rs.getFloat(4));
+              list4.add(rs.getString(4));
               list5.add(rs.getString(5));
               }
               
@@ -94,11 +94,11 @@
        <table width="80%" align="center">
            <tr align="center"bgcolor="white">
                <td></td>
-               <td>gardenId</td>
-               <td>gardenName</td>
-               <td>gardenAddress</td>
-               <td>gardenPrice</td>
-               <td>gardenContact</td>
+               <td>contactMeshId</td>
+               <td>customerId</td>
+               <td>streetAddress</td>
+               <td>city</td>
+               <td>address</td>
                 
                 <%
                     for(int i=0; i<list1.size(); i++)

@@ -67,7 +67,7 @@
    Class.forName("com.mysql.jdbc.Driver");
    Connection connection= DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","rajsen@#0011");
    
-    PreparedStatement st= connection.prepareStatement("select * from city18");
+    PreparedStatement st= connection.prepareStatement("select * from customers");
             
               ResultSet rs= st.executeQuery();
               ArrayList list1= new ArrayList();
@@ -88,8 +88,8 @@
        <table width="80%" align="center">
            <tr align="center"bgcolor="white">
                <td></td>
-               <td>location</td>
-               <td>cityPincode</td>               
+               <td>first name</td>
+               <td>last name</td>               
                 <%
                     for(int i=0; i<list1.size(); i++)
                     {

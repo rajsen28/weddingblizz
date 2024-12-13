@@ -67,20 +67,20 @@
         
             <tr align='center'>
                 <td colspan="2">
-                    <h2>CITY FORM</h2>
+                    <h2>customer FORM</h2>
                 </td>
             </tr>
             
             
             <tr>
-                <td>LOCATION</td>
+                <td>first name</td>
                 
                 <td><input type='text' name='cLocat' class='texttheme'></td>
             
             
             </tr>
             <tr>
-                <td>PINCODE</td>
+                <td>last name</td>
                 <td><input type='contact' name='cPin' class='texttheme'></td>
             </tr>    
            

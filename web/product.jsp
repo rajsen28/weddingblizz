@@ -94,10 +94,10 @@
        <table width="80%" align="center">
            <tr align="center"bgcolor="white">
                <td></td>
-               <td>photoId</td>
+               <td>productId</td>
                <td>name</td>
-               <td>contact</td>
-               <td>mail</td>
+               <td>color</td>
+               <td>size</td>
                <td>address</td>
                 
                 <%
